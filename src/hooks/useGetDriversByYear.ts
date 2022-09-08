@@ -32,7 +32,6 @@ export const useGetDriversByYear = (year: number) => {
       throw new Error(`Drivers failed to load for: ${year}`);
     }
     const jsonResponse = await response.json();
-    console.log(jsonResponse.MRData);
     return jsonResponse.MRData;
   });
 };
